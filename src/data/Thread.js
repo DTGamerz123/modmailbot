@@ -37,7 +37,6 @@ class Thread {
   async replyToUser(moderator, text, replyAttachments = [], isAnonymous = false) {
     // Username to reply with
     let modUsername, logModUsername;
-    const mainRole = utils.getMainRole(moderator);
 
     if (isAnonymous) {
       modUsername = (mainRole ? mainRole.name : 'Moderator');
