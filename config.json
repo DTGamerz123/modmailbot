@@ -1,7 +1,9 @@
-  "mailGuildId": "481097800331821056",
-  "mainGuildId": "475149234014912512",
-  "logChannelId": "481103749813895179",
+{
+  "token": "NDgxNDIxNzUyNzAyOTkyMzkz.Dl2OZw.ZjMqWsGzQZfVNdH9wTCUSBdwRs8",
+  "mailGuildId": "481418259779026945",
+  "mainGuildId": "481418188081594368",
+  "logChannelId": "481418629515313152",
 
-  "status": "DM Me To Message Staff!",
+  "status": "Message Me For Help!",
   "responseMessage": "Thank you for your message! Our mod team will reply to you here as soon as possible."
 }
