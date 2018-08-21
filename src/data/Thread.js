@@ -41,7 +41,7 @@ class Thread {
 
     if (isAnonymous) {
       modUsername = (mainRole ? mainRole.name : 'Moderator');
-      logModUsername = (mainRole ? `(${mainRole.name}) ${name}` : 'Moderator'}`;
+      logModUsername = `(Anonymous) (${moderator.user.username}) ${mainRole ? mainRole.name : 'Moderator'}`;
     } else {
       const name = (config.useNicknames ? moderator.nick || moderator.user.username : moderator.user.username);
       modUsername = (mainRole ? `(${mainRole.name}) ${name}` : name);
