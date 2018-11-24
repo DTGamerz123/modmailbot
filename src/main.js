@@ -67,42 +67,6 @@ bot.on('messageCreate', async msg => {
  * 1) Find the open modmail thread for this user, or create a new one
  * 2) Post the message as a user reply in the thread
  */
-bot.on('guildMemberAdd', member => {
-      let channel = member.guild.channels.find('name', 'joins-leaves');
-      let memberavatar = member.user.avatarURL;
-          if (!channel) return;
-          let join = new Discord.RichEmbed()
-          .setColor('#15f153')
-          .setThumbnail(memberavatar)
-          .addField(':bust_in_silhouette: | Member Joined!', `${member}`)
-          .addField(':microphone2: | Welcome!', `Welcome To The Server, ${member}`)
-          .addField(':id: | User :', "**[" + `${member.id}` + "]**")
-          .addField(':family_mwgb: | Your Are The Member', `${member.guild.memberCount}`)
-          .addField("Name", `${member.user.tag}`, true)
-          .addField('Server', `${member.guild.name}`, true )
-          .setFooter(`${member.guild.name}`)
-          .setTimestamp()
-
-          channel.send(join);
-  });
-//join-left
-  bot.on('guildMemberRemove', member => {
-    const goodbyechannel = member.guild.channels.find('name', 'joins-leaves')
-      let memberavatar = member.user.avatarURL;
-    if (!goodbyechannel) return;
-          let left = new Discord.RichEmbed()
-          .setColor('#FF0000')
-          .setThumbnail(memberavatar)
-          .addField('Member Left!', `${member.user.tag}`)
-          .addField('Has Left the Server', 'Hope He/She Come Back Soon!')
-          .addField('Bye Bye :(', 'We All Will Miss You!')
-          .addField('The Server Now Has', `${member.guild.memberCount}` + " Members")
-          .setFooter(`${member.guild.name}`)
-          .setTimestamp()
-
-          goodbyechannel.send(left);
-  });
-
 
 bot.on('messageCreate', async msg => {
   if (! (msg.channel instanceof Eris.PrivateChannel)) return;
