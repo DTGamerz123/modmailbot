@@ -49,8 +49,8 @@ const defaultConfig = {
   "snippetPrefix": "!!",
 
   "status": "Message me for help!",
-  "responseMessage": "Thank you for your message! Our Mods will reply to you here as soon as possible.",
-  "closeMessage": "Thanks for contacting us! We have closed this thread. If you have any other query then message again!",
+  "responseMessage": "Thank you for your message! The staff team will reply to you as soon as possible!",
+  "closeMessage": "Thanks for contacting our staff team! We have closed this thread now. If you have any other query then you can message us again!",
 
   "newThreadCategoryId": "499499287181262859",
   "mentionRole": "here",
@@ -70,8 +70,8 @@ const defaultConfig = {
   "greetingMessage": null,
   "greetingAttachment": null,
 
-  "requiredAccountAge": "1", // In hours
-  "accountAgeDeniedMessage": "You need to be atleast a member for one hour on the server to contact us through DaveBot!",
+  "requiredAccountAge": "24", // In hours
+  "accountAgeDeniedMessage": "Your Discord account is not old enough to contact our staff team through DaveBot!",
 
 
   "relaySmallAttachmentsAsAttachments": false,
