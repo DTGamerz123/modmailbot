@@ -40,38 +40,39 @@ try {
 }
 
 const defaultConfig = {
-  "token": null,
-  "mailGuildId": null,
-  "mainGuildId": null,
-  "logChannelId": null,
+  "token": process.env.TOKEN,
+  "mailGuildId": "489721243935703042",
+  "mainGuildId": "475149234014912512",
+  "logChannelId": "494239155841138689",
 
   "prefix": "!",
   "snippetPrefix": "!!",
 
   "status": "Message me for help!",
-  "responseMessage": "Thank you for your message! Our mod team will reply to you here as soon as possible.",
-  "closeMessage": null,
+  "responseMessage": "Thank you for your message! Our Mods will reply to you here as soon as possible.",
+  "closeMessage": "Thanks for contacting us! We have closed this thread. If you have any other query then message again!",
 
-  "newThreadCategoryId": null,
+  "newThreadCategoryId": "499499287181262859",
   "mentionRole": "here",
   "pingOnBotMention": true,
 
   "inboxServerPermission": null,
-  "alwaysReply": false,
+  "alwaysReply": true,
   "alwaysReplyAnon": false,
   "useNicknames": false,
-  "ignoreAccidentalThreads": false,
+  "ignoreAccidentalThreads": true,
   "threadTimestamps": false,
-  "allowMove": false,
-  "typingProxy": false,
-  "typingProxyReverse": false,
+  "allowMove": true,
+  "typingProxy": true,
+  "typingProxyReverse": true,
 
   "enableGreeting": false,
   "greetingMessage": null,
   "greetingAttachment": null,
 
-  "requiredAccountAge": null, // In hours
-  "accountAgeDeniedMessage": "Your Discord account is not old enough to contact modmail.",
+  "requiredAccountAge": "1", // In hours
+  "accountAgeDeniedMessage": "You need to be atleast a member for one hour on the server to contact us through DaveBot!",
+
 
   "relaySmallAttachmentsAsAttachments": false,
   "smallAttachmentLimit": 1024 * 1024 * 2,
