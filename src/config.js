@@ -50,7 +50,7 @@ const defaultConfig = {
 
   "status": "Message me for help!",
   "responseMessage": "Thank you for your message! The staff team will reply to you as soon as possible!",
-  "closeMessage": "Thanks for contacting our staff team! We have closed this thread now. If you have any other query then you can message us again!",
+  "closeMessage": "Thank you for contacting our staff team! This thread is now marked as closed. If you have any other query you can message me again!",
 
   "newThreadCategoryId": "499499287181262859",
   "mentionRole": "here",
