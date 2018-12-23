@@ -1,15 +1,2 @@
 {
-  "token": "NDg5NzIwMTY2MjgwODU1NTU3.Dnu3kQ.wN4rV3TPNjZNdNqU2iklDP-DkL0",
-  "mailGuildId": "489721243935703042",
-  "mainGuildId": "475149234014912512",
-  "logChannelId": "494239155841138689",
-  "newThreadCategoryId": "499499287181262859",
-  
-  "ignoreAccidentalThreads": "true",
-  "typingProxy": "true",
-  "typingProxyReverse": "true",
-  "requiredAccountAge": "24",
-  
-  "status": "Message me for help!",
-  "responseMessage": "Thank you for contacting us! Our staff team will reply to you as soon as possible!",
 }
