@@ -1,5 +1,6 @@
 const path = require('path');
 const fs = require('fs');
+const Discord = require('discord.js');
 const config = require('../config');
 const { Client } = require('discord.js');
 const bot = new Client({ disableEveryone: true });
