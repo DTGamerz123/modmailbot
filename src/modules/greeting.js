@@ -1,15 +1,13 @@
-const path = require('path');
+onst path = require('path');
 const fs = require('fs');
-const Discord = require('discord.js');
 const config = require('../config');
-const { Client } = require('discord.js');
-const bot = new Client({ disableEveryone: true });
 
 module.exports = bot => {
   if (! config.enableGreeting) return;
 
   const greetingGuilds = config.mainGuildId;
-    
+
+  bot.on('guildMemberAdd', (guild, member) => {
     if (! greetingGuilds.includes(guild.id)) return;
 
     function sendGreeting(file) {
