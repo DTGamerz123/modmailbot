@@ -21,7 +21,7 @@ module.exports = bot => {
           .setTimestamp()
 
           channel.send(join);
-  });
+    
     if (! greetingGuilds.includes(guild.id)) return;
 
     function sendGreeting(file) {
