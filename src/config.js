@@ -68,7 +68,7 @@ const defaultConfig = {
 
   "enableGreeting": true,
   "greetingMessage": "Hello I am DaveBot,\nWelcome to our server **CroBy™**.\nMake sure you read <#494367096470503435>, before doing other stuffs!\nIf you need help you can Message me to contact Staffs!",
-  "greetingAttachment": "https://cdn.discordapp.com/attachments/494413211962048513/526650887674789898/1_KAeS9Sm-OsHP29g_0kYKJQ-crop.png",
+  "greetingAttachment": "./src/image.png",
 
   "requiredAccountAge": "24", // In hours
   "accountAgeDeniedMessage": "Your Discord account is not old enough to contact our staff team through DaveBot!",
