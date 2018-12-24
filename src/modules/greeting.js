@@ -11,7 +11,7 @@ module.exports = bot => {
   const greetingGuilds = config.mainGuildId;
 
   bot.on('guildMemberAdd', (guild, member) => {
-    const channel = bot.channels.get('494367469499318273');
+    const channel = bot.getChannel('494367469499318273');
       let memberavatar = member.user.avatarURL;
           if (!channel) return;
           let join = new Discord.RichEmbed()
@@ -51,7 +51,7 @@ module.exports = bot => {
   });
 };
 bot.on('guildMemberRemove', member => {
-    const channel = bot.channels.get('494367469499318273');
+    const channel = bot.getChannel('494367469499318273');
       let memberavatar = member.user.avatarURL;
     if (!goodbyechannel) return;
           let left = new Discord.RichEmbed()
