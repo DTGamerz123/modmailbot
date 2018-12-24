@@ -1,6 +1,7 @@
 const path = require('path');
 const fs = require('fs');
 const config = require('../config');
+const { Client } = require('discord.js');
 const bot = new Client({ disableEveryone: true });
 
 module.exports = bot => {
