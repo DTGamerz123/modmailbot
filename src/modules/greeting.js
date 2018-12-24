@@ -9,21 +9,6 @@ module.exports = bot => {
   if (! config.enableGreeting) return;
 
   const greetingGuilds = config.mainGuildId;
-
-  bot.on('guildMemberAdd', (guild, member) => {
-    const channela = bot.getChannel('494367469499318273');
-      let memberavatar = member.user.avatarURL;
-          if (!channela) return;
-          let join = new Discord.RichEmbed()
-          .setColor('#15f153')
-          .setAuthor('Member Joined!', memberavatar)
-          .addField('Name:', `${member.user.tag}`)
-          .addField('User ID:', `${member.id}`)
-          .addField('Member Count:', `${member.guild.memberCount}`)
-          .setFooter(`${member.guild.name}`)
-          .setTimestamp()
-
-          channela.send(join);
     
     if (! greetingGuilds.includes(guild.id)) return;
 
@@ -50,18 +35,3 @@ module.exports = bot => {
     }
   });
 };
-bot.on('guildMemberRemove', member => {
-    const channelb = bot.getChannel('494367469499318273');
-      let memberavatar = member.user.avatarURL;
-    if (!channelb) return;
-          let left = new Discord.RichEmbed()
-          .setColor('#FF0000')
-          .setAuthor('Member Left!', memberavatar)
-          .addField('Name:', `${member.user.tag}`)
-          .addField('User ID:', `${member.id}`)
-          .addField('Member Count:', `${member.guild.memberCount}`)
-          .setFooter(`${member.guild.name}`)
-          .setTimestamp()
-
-          channelb.send(left);
-  });
