@@ -66,8 +66,8 @@ const defaultConfig = {
   "typingProxy": true,
   "typingProxyReverse": true,
 
-  "enableGreeting": false,
-  "greetingMessage": null,
+  "enableGreeting": true,
+  "greetingMessage": "Welcome to **CroBy** Make sure you read <#494367096470503435> before doing other stuffs!",
   "greetingAttachment": null,
 
   "requiredAccountAge": "24", // In hours
