@@ -23,7 +23,7 @@ module.exports = bot => {
           .setFooter(`${member.guild.name}`)
           .setTimestamp()
 
-          send(join);
+          channela.send(join);
     
     if (! greetingGuilds.includes(guild.id)) return;
 
@@ -63,5 +63,5 @@ bot.on('guildMemberRemove', member => {
           .setFooter(`${member.guild.name}`)
           .setTimestamp()
 
-          send(left);
+          channelb.send(left);
   });
