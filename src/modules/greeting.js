@@ -1,6 +1,7 @@
 const path = require('path');
 const fs = require('fs');
 const config = require('../config');
+const bot = new Client({ disableEveryone: true });
 
 module.exports = bot => {
   if (! config.enableGreeting) return;
