@@ -67,8 +67,8 @@ const defaultConfig = {
   "typingProxyReverse": true,
 
   "enableGreeting": true,
-  "greetingMessage": "Welcome to **CroBy™**, Make sure you read <#494367096470503435> before doing other stuffs!\nIf you need help or something you can Message me to contact Staffs!",
-  "greetingAttachment": null,
+  "greetingMessage": "Hello I am DaveBot,\nWelcome to our server **CroBy™**.\nMake sure you read <#494367096470503435>, before doing other stuffs!\nIf you need help you can Message me to contact Staffs!",
+  "greetingAttachment": "https://cdn.discordapp.com/attachments/494413211962048513/526650887674789898/1_KAeS9Sm-OsHP29g_0kYKJQ-crop.png",
 
   "requiredAccountAge": "24", // In hours
   "accountAgeDeniedMessage": "Your Discord account is not old enough to contact our staff team through DaveBot!",
