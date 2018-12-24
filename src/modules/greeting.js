@@ -11,9 +11,9 @@ module.exports = bot => {
   const greetingGuilds = config.mainGuildId;
 
   bot.on('guildMemberAdd', (guild, member) => {
-    const channel = bot.getChannel('494367469499318273');
+    const channela = bot.getChannel('494367469499318273');
       let memberavatar = member.user.avatarURL;
-          if (!channel) return;
+          if (!channela) return;
           let join = new Discord.RichEmbed()
           .setColor('#15f153')
           .setAuthor('Member Joined!', memberavatar)
@@ -23,7 +23,7 @@ module.exports = bot => {
           .setFooter(`${member.guild.name}`)
           .setTimestamp()
 
-          channel.send(join);
+          channela.send(join);
     
     if (! greetingGuilds.includes(guild.id)) return;
 
@@ -51,9 +51,9 @@ module.exports = bot => {
   });
 };
 bot.on('guildMemberRemove', member => {
-    const channel = bot.getChannel('494367469499318273');
+    const channelb = bot.getChannel('494367469499318273');
       let memberavatar = member.user.avatarURL;
-    if (!goodbyechannel) return;
+    if (!channelb) return;
           let left = new Discord.RichEmbed()
           .setColor('#FF0000')
           .setAuthor('Member Left!', memberavatar)
@@ -63,5 +63,5 @@ bot.on('guildMemberRemove', member => {
           .setFooter(`${member.guild.name}`)
           .setTimestamp()
 
-          channel.send(left);
+          channelb.send(left);
   });
