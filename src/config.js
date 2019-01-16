@@ -68,6 +68,7 @@ const defaultConfig = {
 
   "enableGreeting": false,
   "greetingMessage": null,
+  "greetingAttachment": null,
 
   "requiredAccountAge": "24", // In hours
   "accountAgeDeniedMessage": "Your Discord account is not old enough to contact our staff team through Hammer!",
