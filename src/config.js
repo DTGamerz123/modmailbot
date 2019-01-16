@@ -41,18 +41,18 @@ try {
 
 const defaultConfig = {
   "token": process.env.TOKEN,
-  "mailGuildId": "489721243935703042",
-  "mainGuildId": "475149234014912512",
-  "logChannelId": "494239155841138689",
+  "mailGuildId": "534974750473322516",
+  "mainGuildId": "494385835840372776",
+  "logChannelId": "534976519446069267",
 
   "prefix": "!",
   "snippetPrefix": "!!",
 
   "status": "Message me for help!",
-  "responseMessage": "Thank you for your message! The staff team will reply to you as soon as possible!",
-  "closeMessage": "Thank you for contacting our staff team! This thread is now marked as closed. If you have any other query you can message me again!",
+  "responseMessage": null,
+  "closeMessage": null,
 
-  "newThreadCategoryId": "499499287181262859",
+  "newThreadCategoryId": "534975454382391297",
   "mentionRole": "here",
   "pingOnBotMention": true,
 
@@ -66,12 +66,11 @@ const defaultConfig = {
   "typingProxy": true,
   "typingProxyReverse": true,
 
-  "enableGreeting": true,
-  "greetingMessage": "Hello I am DaveBot,\nWelcome to our server **CroBy™**.\nMake sure you read <#494367096470503435>, before doing other stuffs!\nIf you need help you can Message me to contact Staffs!",
-  "greetingAttachment": "./src/Dave Welcome.png",
+  "enableGreeting": false,
+  "greetingMessage": null,
 
   "requiredAccountAge": "24", // In hours
-  "accountAgeDeniedMessage": "Your Discord account is not old enough to contact our staff team through DaveBot!",
+  "accountAgeDeniedMessage": "Your Discord account is not old enough to contact our staff team through Hammer!",
 
 
   "relaySmallAttachmentsAsAttachments": false,
