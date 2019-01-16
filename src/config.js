@@ -57,7 +57,7 @@ const defaultConfig = {
   "pingOnBotMention": true,
 
   "inboxServerPermission": null,
-  "alwaysReply": true,
+  "alwaysReply": false,
   "alwaysReplyAnon": false,
   "useNicknames": false,
   "ignoreAccidentalThreads": true,
